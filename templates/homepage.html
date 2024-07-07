@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrencies Analysis Predict</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .loading-gif {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cryptocurrencies Analysis Predict</h1>
+        <button onclick="loadData()">Load Data</button>
+        <form id="loadForm"  method="POST" style="display: none;"></form>
+        <div class="loading-gif">
+            <img src="https://i.pinimg.com/originals/02/9f/90/029f9004efd30e4188b3bcbe49cc7074.gif" alt="Loading...">
+        </div>
+    </div>
+    <script>
+        function loadData() {
+            document.querySelector('.loading-gif').style.display = 'block';
+            document.querySelector('button').style.display = 'none';
+            document.getElementById('loadForm').submit();
+        }
+    </script>
+</body>
+</html>

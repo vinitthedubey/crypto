@@ -1,0 +1,13 @@
+tweepy
+textblob
+pandas
+numpy
+matplotlib
+ipykernel
+mwclient
+transformers
+tensorflow
+Flask 
+joblib
+scikit-learn
+yfinance
